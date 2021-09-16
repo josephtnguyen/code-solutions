@@ -16,7 +16,7 @@ var numIslands = function (grid) {
 };
 
 function removeIsland(grid, i, j) {
-  grid[i][j] = "0";
+  grid[i][j] = '0';
   const neighbors = [[i - 1, j], [i, j - 1], [i + 1, j], [i, j + 1]];
   for (const neighbor of neighbors) {
     const [a, b] = neighbor;
